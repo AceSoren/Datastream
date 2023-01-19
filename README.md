@@ -16,3 +16,4 @@ Datastream is a CAVE (in general) bullet hell fangame taking particular notes fr
 * Enemy damage and removal
 * Enemy spawning
 * Bullet and enemy cleanup outside game screen
+* Basic player attack
