@@ -14,3 +14,5 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.position += Vector2(1,0).rotated(rotation)
+	if ($RayCast2D.is_colliding()):
+		print("That's a hit!")
