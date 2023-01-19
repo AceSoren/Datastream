@@ -12,7 +12,6 @@ func get_input(_delta):
 		move_and_slide(Vector2(0, -80))
 	if Input.is_action_pressed("move_back"):
 		move_and_slide(Vector2(0, 80))
-	
 
 func _physics_process(delta):
 	get_input(delta)

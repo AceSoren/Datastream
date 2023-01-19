@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="DataStream"
-run/main_scene="res://Battle Screen.tscn"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -30,6 +30,7 @@ window/stretch/aspect="keep"
 [global]
 
 render=false
+directional=false
 
 [input]
 

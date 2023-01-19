@@ -78,10 +78,10 @@ shape = SubResource( 6 )
 position = Vector2( 0, 7.75758 )
 scale = Vector2( 1, 0.969697 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="Health-meter" type="Sprite" parent="KinematicBody2D/Hitbox/Fighter"]
-visible = false
 show_behind_parent = true
 position = Vector2( 0, -9 )
 texture = ExtResource( 8 )

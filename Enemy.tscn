@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://FIGHTER-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://Enemy.gd" type="Script" id=2]
+
+[node name="Enemy" type="Node2D"]
+position = Vector2( 144, 64 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+flip_v = true
+region_enabled = true
+region_rect = Rect2( 16, 2, 32, 40 )
+
+[node name="Node2D" type="Node2D" parent="Sprite"]
+script = ExtResource( 2 )
