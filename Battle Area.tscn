@@ -5,31 +5,33 @@
 [ext_resource path="res://UI-Combat/UI-BASE.png" type="Texture" id=3]
 [ext_resource path="res://UI-Combat/CORRUPT.png" type="Texture" id=4]
 
-[node name="Ui-Base" type="Sprite"]
+[node name="Battle Area" type="Node2D"]
+
+[node name="Ui-Base" type="Sprite" parent="."]
 position = Vector2( 120, 160 )
 texture = ExtResource( 3 )
 
-[node name="Meter" type="Sprite" parent="."]
+[node name="Meter" type="Sprite" parent="Ui-Base"]
 position = Vector2( -84, -23 )
 scale = Vector2( 1, 1.03125 )
 texture = ExtResource( 2 )
 
-[node name="Status" type="Sprite" parent="."]
+[node name="Status" type="Sprite" parent="Ui-Base"]
 show_behind_parent = true
 position = Vector2( -96, 135 )
 scale = Vector2( 1, 1.04167 )
 texture = ExtResource( 1 )
 
-[node name="Corrupt" type="Sprite" parent="Status"]
+[node name="Corrupt" type="Sprite" parent="Ui-Base/Status"]
 show_behind_parent = true
 position = Vector2( 0, 0.00122577 )
 scale = Vector2( 1, 1.00005 )
 texture = ExtResource( 4 )
 
-[node name="Playfield" type="StaticBody2D" parent="."]
+[node name="Playfield" type="StaticBody2D" parent="Ui-Base"]
 position = Vector2( 24, 16.75 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Playfield"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ui-Base/Playfield"]
 position = Vector2( 0.875042, 2.78023 )
 scale = Vector2( -0.844309, -0.879138 )
 build_mode = 1

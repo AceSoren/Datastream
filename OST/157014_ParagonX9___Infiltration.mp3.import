@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/157014_ParagonX9___Infiltration.mp3-2438ba4134f64695ef87257824a27aaf.mp3str"
+
+[deps]
+
+source_file="res://OST/157014_ParagonX9___Infiltration.mp3"
+dest_files=[ "res://.import/157014_ParagonX9___Infiltration.mp3-2438ba4134f64695ef87257824a27aaf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

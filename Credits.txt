@@ -1,0 +1,6 @@
+Credits go as follows
+CAVE - For making badass bullet hell shmups, general design inspiration
+ParagonX9 - Music
+Cyber Rainforce - Music
+Asperite - Program used for art
+Blender - Used for background modeling

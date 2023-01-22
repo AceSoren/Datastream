@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Background.gd" type="Script" id=1]
+[ext_resource path="res://RedPlanetProto3.obj" type="ArrayMesh" id=2]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 240, 320 )
+transparent_bg = true
+handle_input_locally = false
+usage = 3
+render_target_update_mode = 3
+
+[node name="Node2D" type="Node2D" parent="ViewportContainer/Viewport"]
+show_behind_parent = true
+
+[node name="MeshInstance" type="MeshInstance" parent="ViewportContainer/Viewport/Node2D"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49012, 0, -3.54792 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../..")
+
+[node name="Background" type="Camera" parent="ViewportContainer/Viewport/Node2D"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.54764 )
+current = true
+fov = 80.0

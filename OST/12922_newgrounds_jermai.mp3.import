@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/12922_newgrounds_jermai.mp3-e27aada2114ff8d378c0be9376d59a89.mp3str"
+
+[deps]
+
+source_file="res://OST/12922_newgrounds_jermai.mp3"
+dest_files=[ "res://.import/12922_newgrounds_jermai.mp3-e27aada2114ff8d378c0be9376d59a89.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
