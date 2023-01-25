@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
+[ext_resource path="res://PlayerTimer.gd" type="Script" id=1]
 [ext_resource path="res://FIGHTER-Sheet.png" type="Texture" id=5]
 [ext_resource path="res://Fighter.gd" type="Script" id=6]
 [ext_resource path="res://UI-Combat/Health.png" type="Texture" id=7]
@@ -58,6 +59,7 @@ shape = SubResource( 6 )
 position = Vector2( 0, 8 )
 scale = Vector2( 1, 1.03125 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="Health-meter" type="Sprite" parent="Node2D/KinematicBody2D/Fighter"]
@@ -74,3 +76,6 @@ texture = ExtResource( 7 )
 
 [node name="Playbox" type="CollisionShape2D" parent="Node2D/KinematicBody2D"]
 shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+script = ExtResource( 1 )

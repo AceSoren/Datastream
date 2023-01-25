@@ -14,6 +14,10 @@ config/name="DataStream"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Variables="*res://Variables.gd"
+
 [display]
 
 window/size/width=240

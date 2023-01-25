@@ -7,6 +7,7 @@
 script = ExtResource( 1 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
+visible = false
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -18,7 +19,7 @@ size = Vector2( 240, 320 )
 transparent_bg = true
 handle_input_locally = false
 usage = 3
-render_target_update_mode = 3
+render_target_update_mode = 0
 
 [node name="Node2D" type="Node2D" parent="ViewportContainer/Viewport"]
 show_behind_parent = true

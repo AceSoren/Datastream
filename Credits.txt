@@ -4,3 +4,4 @@ ParagonX9 - Music
 Cyber Rainforce - Music
 Asperite - Program used for art
 Blender - Used for background modeling
+Godot Q&A forums - Being clutch as heck
