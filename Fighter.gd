@@ -9,9 +9,10 @@ const Time_To_Respawn = 2
 
 func _ready():
 	add_to_group("Player")
+	var _f = PlayerScene
 
 func get_input(_delta):
-	var vel = Vector2()
+	var _vel = Vector2()
 	if Input.is_action_pressed("move_right"):
 		move_and_slide(Vector2(80, 0))
 	if Input.is_action_pressed("move_left"):
@@ -22,6 +23,6 @@ func get_input(_delta):
 		move_and_slide(Vector2(0, 80))
 	
 
-func _physics_process(_delta):
+func _process(_delta):
 	get_input(_delta)
 

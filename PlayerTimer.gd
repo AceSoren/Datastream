@@ -1,12 +1,20 @@
-extends Timer
+extends Node2D
 
-onready var time = get_node("/root/Node2D/Player/Timer")
-
-var PlayerScene = load("res://Player.tscn")
+var Player = load ("res://Player.tscn")
+onready var PlayerInstance = Player.instance()
+onready var Respawn = Timer.new()
 
 func _ready():
 	pass
 	
 func respawn(_delta):
-	if  PlayerScene.tree_exiting():
-		get_tree().call_group("Player", "add_child(PlayerScene)")
+	if Player.tree_exited():
+		Respawn.connect("timeout",self,"_on_timer_timeout")
+		Respawn.set_wait_time(1)
+		add_child(Respawn)
+		Respawn.start()
+
+func _on_timer_timeout():
+	Respawn.stop()
+	add_child(Player)
+	Respawn.queue_free()

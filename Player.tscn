@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://PlayerTimer.gd" type="Script" id=1]
 [ext_resource path="res://FIGHTER-Sheet.png" type="Texture" id=5]
 [ext_resource path="res://Fighter.gd" type="Script" id=6]
 [ext_resource path="res://UI-Combat/Health.png" type="Texture" id=7]
@@ -76,6 +75,3 @@ texture = ExtResource( 7 )
 
 [node name="Playbox" type="CollisionShape2D" parent="Node2D/KinematicBody2D"]
 shape = SubResource( 6 )
-
-[node name="Timer" type="Timer" parent="."]
-script = ExtResource( 1 )

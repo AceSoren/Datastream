@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Battle Area.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=6]
 [ext_resource path="res://AudioStreamPlayer2D.gd" type="Script" id=7]
+[ext_resource path="res://PlayerTimer.gd" type="Script" id=8]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -28,3 +29,6 @@ position = Vector2( 255, 73 )
 show_behind_parent = true
 
 [node name="Spatial" parent="." instance=ExtResource( 6 )]
+
+[node name="Timer" type="Node2D" parent="."]
+script = ExtResource( 8 )
