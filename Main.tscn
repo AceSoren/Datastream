@@ -20,7 +20,8 @@ script = ExtResource( 7 )
 [node name="Enemy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 148, 64 )
 
-[node name="Ui-Base" parent="." instance=ExtResource( 5 )]
+[node name="Battle Area" parent="." instance=ExtResource( 5 )]
+show_behind_parent = true
 
 [node name="Bullets" parent="." instance=ExtResource( 4 )]
 position = Vector2( 255, 73 )
@@ -31,4 +32,5 @@ show_behind_parent = true
 [node name="Spatial" parent="." instance=ExtResource( 6 )]
 
 [node name="Timer" type="Node2D" parent="."]
+position = Vector2( 82, 256 )
 script = ExtResource( 8 )

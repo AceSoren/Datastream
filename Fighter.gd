@@ -1,11 +1,8 @@
 extends KinematicBody2D
 
-export var pos_to_respawn = Vector2(82, 256)
-
+export var pos_to_respawn = Vector2(84, 256)
 
 var PlayerScene = load("res://Player.tscn")
-
-const Time_To_Respawn = 2
 
 func _ready():
 	add_to_group("Player")
