@@ -1,7 +1,7 @@
 # Datastream
  Switched to 2D to try and complete a game
 -----
-LICENSE: AGPL
+LICENSE: AGPL [Seen here](https://www.gnu.org/licenses/agpl-3.0.en.html#license-text)
 -----
 ## Synopsis
 
