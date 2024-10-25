@@ -5,7 +5,7 @@ LICENSE: AGPL [Seen here](https://www.gnu.org/licenses/agpl-3.0.en.html#license-
 -----
 ## Synopsis
 
-Datastream is a CAVE (in general) bullet hell fangame taking particular notes from a late mobile phone game called SWITCH, made by the same company. ("Mobile phone" is not to be confused with "smartphone".)
+Datastream is a CAVE-styled (in general) bullet hell fangame taking particular notes from a late mobile phone game called SWITCH, made by the same company. ("Mobile phone" is not to be confused with "smartphone".)
 The game is planned to have a 6 stage arcade mode and two roguelike modes.
 
 ### Arcade Mode
